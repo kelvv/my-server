@@ -1,0 +1,9 @@
+version: '2'
+services:
+  shadowsock:
+    image: kelvv/shadowsock-docker
+    ports:
+      - "7878:431"
+    environment:
+      - password=docker
+    container_name: kelvv-shadowsock
