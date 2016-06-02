@@ -3,7 +3,15 @@ services:
   shadowsock:
     image: kelvv/shadowsock-docker
     ports:
-      - "7878:431"
+      - "0.0.0.0:7878:431"
     environment:
       - password=docker
     container_name: kelvv-shadowsock
+  homepage:
+    image: kelvv/nvmhome-docker
+    ports:
+      - "0.0.0.0:3000:22"
+      - "0.0.0.0:80:3000"
+    environment:
+      - NODE_ENV = staging
+    container_name: kelvv-homepage
