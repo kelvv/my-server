@@ -1,5 +1,16 @@
 version: '2'
 services:
+  homepage:
+    image: kelvv/nvmhome-docker
+    ports:
+      - "0.0.0.0:3000:22"
+      - "0.0.0.0:80:3000"
+    environment:
+      - NODE_ENV=staging
+      - projecturl=https://github.com/kelvv/my-site.git
+    container_name: kelvv-homepage
+    restart: always
+    
   shadowsock:
     image: kelvv/shadowsock-docker
     ports:
@@ -8,13 +19,4 @@ services:
       - password=docker
     container_name: kelvv-shadowsock
     restart: always
-  homepage:
-    image: kelvv/nvmhome-docker
-    ports:
-      - "0.0.0.0:3000:22"
-      - "0.0.0.0:80:3000"
-    environment:
-      - NODE_ENV = staging
-      - projecturl = https://github.com/kelvv/my-site.git
-    container_name: kelvv-homepage
-    restart: always
+  
