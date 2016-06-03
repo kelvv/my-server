@@ -1,10 +1,15 @@
 # my-server
 use docker-compose to install all what my need in personal own server
 
-###已经集成：
-1. shadowsock (翻墙)
+### Integrated：
+1. shadowsock 
+2. homepage
 
-###运行:
+### Run:
 ```
+$ git clone https://github.com/kelvv/my-server.git && cd my-server
 $ docker-compose up -d
+
 ```
+
+###Done!
