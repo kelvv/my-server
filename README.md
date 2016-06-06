@@ -2,9 +2,9 @@
 use docker-compose to install all what my need in personal own server
 
 ### Integrated：
-1. shadowsock 
-2. homepage
-3. ppt
+1. shadowsock  port:7878  password:docker
+2. homepage    port:80
+3. ppt         port:81
 
 ### Run:
 ```
