@@ -5,6 +5,7 @@ services:
     ports:
       - "0.0.0.0:3000:22"
       - "0.0.0.0:81:3000"
+      - "0.0.0.0:3101:3100"
     environment:
       - NODE_ENV=staging
       - projecturl=https://github.com/kelvv/my-site.git
@@ -25,6 +26,7 @@ services:
     image: kelvv/nvmhome-docker:v1.1.4
     ports:
       - "0.0.0.0:82:3000"
+      - "0.0.0.0:3102:3100"
     environment:
       - projecturl=https://github.com/kelvv/my-ppt.git
       - autoupdate=true
