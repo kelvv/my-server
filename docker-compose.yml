@@ -1,7 +1,7 @@
 version: '2'
 services:
   homepage:
-    image: kelvv/nvmhome-docker:v1.1.4
+    image: kelvv/nvmhome-docker:v1.1.5
     ports:
       - "0.0.0.0:3000:22"
       - "0.0.0.0:81:3000"
@@ -23,7 +23,7 @@ services:
     restart: always
 
   ppt:
-    image: kelvv/nvmhome-docker:v1.1.4
+    image: kelvv/nvmhome-docker:v1.1.5
     ports:
       - "0.0.0.0:82:3000"
       - "0.0.0.0:3102:3100"
